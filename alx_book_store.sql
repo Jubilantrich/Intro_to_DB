@@ -45,6 +45,6 @@ CREATE TABLE Order_Details (
     order_id INT,
     book_id INT,
     quantity DOUBLE NOT NULL,
-    FOREIGN KEY (order_id) REFERENCES (order_id) ON DELETE CASCADE
-    FOREIGN KEY (book_id) REFERENCES (book_id) ON DELETE CASCADE
+    FOREIGN KEY (order_id) REFERENCES Orders (order_id) ON DELETE CASCADE
+    FOREIGN KEY (book_id) REFERENCES Books (book_id) ON DELETE CASCADE
 );
