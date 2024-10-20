@@ -22,7 +22,7 @@ CREATE TABLE Books(
 );
 
 --create customer table
-CREATE TABLE customers(
+CREATE TABLE Customers (
     customer_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     customer_nane VARCHAR(215),
     email VARCHAR(215),
@@ -32,7 +32,7 @@ CREATE TABLE customers(
 
 --create the orders table
 
-CREATE TABLE orders (
+CREATE TABLE Orders (
     order_id INT AUTO_INCREMENT PRIMARY KEY,
     customer_id INT,
     order_date DATE NOT NULL,
@@ -40,8 +40,8 @@ CREATE TABLE orders (
 
 );
 
-CREATE TABLE Order_Details(
-    orderdatailid INT AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE Order_Details (
+    orderdetailid INT AUTO_INCREMENT PRIMARY KEY,
     order_id INT,
     book_id INT,
     quantity DOUBLE NOT NULL,
