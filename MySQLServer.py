@@ -68,7 +68,7 @@ try:
                     cursor.execute(query)
             print("Tables created or already exist.")
 
-except Error as e:
+except mysql.connector.Error as e:
     print(f"Error: {e}")
 
 # Connection will be automatically closed when 'with' block ends.
