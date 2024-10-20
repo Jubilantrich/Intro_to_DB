@@ -24,7 +24,7 @@ CREATE TABLE Books(
 --create customer table
 CREATE TABLE Customers (
     customer_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    customer_nane VARCHAR(215),
+    customer_name VARCHAR(215),
     email VARCHAR(215),
     address TEXT
 
